@@ -9,8 +9,6 @@ function separatePositive(arr) {
   if (!arr.length) return [];
   let [left, right] = [0, arr.length - 1];
 
-  console.log(arr);
-
   while (left < right) {
     if (arr[left] > 0 && arr[right] < 0) {
       left++;
@@ -30,7 +28,6 @@ function separatePositive(arr) {
     }
   }
 
-  console.log(arr)
   return arr;
 }
 
